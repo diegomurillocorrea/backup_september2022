@@ -1,0 +1,3 @@
+Time Complexity
+
+A for inside of a for - > cuadratic

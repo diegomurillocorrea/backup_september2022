@@ -1,0 +1,7 @@
+Recursion is simply when a function calls itself
+However, it does not stop here.
+Recursion is a technique
+Recursion provides an elegant solution to keep
+your code D.R.Y. -> Don't Repeat Yourself
+contrasted with W.E.T -> We Enjoy Typing
+Expected CS knowledge

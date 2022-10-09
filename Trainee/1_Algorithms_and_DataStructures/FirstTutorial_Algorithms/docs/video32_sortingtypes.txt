@@ -1,0 +1,27 @@
+COMPARISON SORTS
+
+Naive Sorts:
+Keep looking and comparing values
+until the list is sorted
+• Bubble Sort
+• Insertion Sort
+• Selection Sort
+
+Divide and Conquer Sorts
+Recursively divide lists and sort 
+smaller parts of list until entire
+list is sorted
+• Mergesort
+• Quiksort
+
+Bubble Sort:
+Loop through an array, comparing adjacent
+indices and swapping the greater value
+to the end
+
+Merge Sort:
+Recursively merge sorted sub-lists
+
+Mergin Lists:
+The merge step takes two sorted lists 
+and merges them into 1 sorted list

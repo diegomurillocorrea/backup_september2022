@@ -1,0 +1,8 @@
+Hash Table:
+Organizes data for quick loop 
+up on values for a given key
+
+This is basically an array with objects ( linked lists ) inside
+First of all tou have to specify how long the hash table is going to be
+Then you'll see if you have to make it bigger
+If your hash table is 50% fulled, in that momento you'll gave to make it bigger

@@ -1,0 +1,13 @@
+DIVIDE AND CONQUER:
+A recursive technique for
+1. Taking a large of problems
+2. Breaking into solved problems 
+3. Doing work to each of the problems to reach some goals some solution
+
+BINARY SEARCH:
+It is to search for a value in a "sorted" array by 
+cutting the side of the search area in half
+
+LINEAR SEARCH:
+Search for a value in an array by 
+checking each value in order

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-1 {
+    border: 1px solid black;
+    width: 24em;
+    height: 12em;
+    background-color: red;
+    color: white;
+}
+
+.box-2 {
+    border: 1px solid black;
+    width: 24em;
+    height: 6em;
+    background-color: green;
+    color: white;
+}
+
+.box-3 {
+    border: 1px solid black;
+    width: 12em;
+    height: 24em;
+    background-color: blue;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.ai-bottom {
+    align-items: flex-end;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.no-height {
+    height: inherit;
+}
+
+.ai-stretch {
+    align-items: stretch;
+    height: 200px;
+}

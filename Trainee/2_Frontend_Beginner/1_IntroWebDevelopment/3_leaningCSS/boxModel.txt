@@ -1,0 +1,40 @@
+Display:
+A div is default -> display: block
+A span is default -> display: inline
+
+The property -> display: inline-block
+It's a little box that respects width and height in a line
+
+The property -> display: flex and inline-flex
+It allows you to center things centered horizontal and vertically
+
+The property -> display: table
+This one allows you to make like a table without using divs
+
+display: grid
+
+The complete element of a box model:
+- Width
+- Height
+- Margin: Outsite the border
+- Padding: Inside the border
+- Border
+
+Always use->
+* {
+    box-sixing: border-box;
+}
+
+Flex-> left and right
+
+display: flex has to be in the parent elements
+
+justify-content: flex end;
+You will have all the elements aligned in the same line to the right
+
+flex-start is by default in HTML
+You will have all the elements aligned in the same line to the left
+
+.parent-class > child-class -> you will be specifying
+
+display: flex ---> flex-direction, justify-content and align-items

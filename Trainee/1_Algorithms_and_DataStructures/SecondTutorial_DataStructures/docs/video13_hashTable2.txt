@@ -1,0 +1,15 @@
+When you are thinking about optimizing a problem that requires a fast loop up
+your mind will always think "HASH TABLE"
+
+If you use Hash Table and you also use ES6
+It means you are learning and growing as technology changes
+
+A set just keeps key values
+
+ARRAY:
+
+Organizes items sequentially in memory
+
+Arrays are good at looking up by key and by appending data in constant time
+
+In javascript there is just dynamic arrays, no more

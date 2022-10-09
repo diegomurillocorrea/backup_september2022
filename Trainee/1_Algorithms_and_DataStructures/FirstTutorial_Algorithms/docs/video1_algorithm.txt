@@ -1,0 +1,13 @@
+Steps you take to solve a problem
+Different techniques:
+1. Patterns
+2. Improving speed of the programs
+
+The complete curse:
+1. How fast an algorithm is
+2. Some techniques to optimize certain types of algorithms
+3. Get comfortable with recursion
+4. Sorting and searching algorithms
+5. Understand the difference between Divide & Conquer and Dynamic Programming
+6. Pros and cons of the Greedy technique
+7. Brute force algorithm

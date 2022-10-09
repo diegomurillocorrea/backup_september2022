@@ -1,0 +1,12 @@
+Calculating time
+
+What do we do if we have multiple expressions/loops/etc?
+
+Loops are linear
+1 + 1 + 1
+
+A loop inside of a loop = cuadratic
+n * n * n
+
+What about O(logn) = Logarithmic
+A normal loop

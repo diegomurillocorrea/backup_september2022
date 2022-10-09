@@ -1,0 +1,7 @@
+How we can calculate space complexity?
+Space that takes memory = How more space are we taking of
+
+Things to keep in mind
+1. Are you making a new data structure
+2. How often are you doing it
+3. Are you using recursion

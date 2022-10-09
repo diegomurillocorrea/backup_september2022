@@ -1,0 +1,12 @@
+Stack = Stores items in "A last in, first-out" -> ( LIFO ) order
+Queue = Stores items in "A first in, first-out" -> ( FIFO ) order
+
+Stack -> Inserts values since 0 and remove values since the very last one
+Queue -> Inserts values since 0 and remove values since 0
+
+Pros -> Fast operations
+
+Javascript -> Stack === Array
+
+Enqueue -> Inserting values to a queue
+Dequeue -> Taking values of from a queue

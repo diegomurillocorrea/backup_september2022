@@ -1,0 +1,1 @@
+The best way to learn JS is to get in and write it!

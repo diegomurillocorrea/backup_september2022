@@ -1,0 +1,15 @@
+var countChars = function(str){
+    return str.length;
+};
+
+countChars("dance");
+
+countChars("walk");
+
+This was a constant property look up
+
+/*
+How much more work would it take
+to get the length of 1 million
+char string?
+*/

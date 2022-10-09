@@ -1,0 +1,18 @@
+// What are some simple, native JS
+// methods/expressions/operations?
+
+// To get a value from an array with pop
+const arr = [1,2,3]
+arr.pop() // => [1,2] eliminate de last value of an expression
+
+// To get a value from an array
+arr[0]
+
+// To get a value from an object
+const obj = {a: 1}
+obj.a // => 1
+
+// To increase a value
+let a = 1
+let b = 2
+a + b // a + n

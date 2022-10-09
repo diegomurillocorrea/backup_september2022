@@ -1,0 +1,11 @@
+When using CSS
+If you want to set style to an element
+
+NEVER use IDs or !Important
+
+Always use Classes
+
+This value -> * <- means EVERYTHING
+It is called -> Wildcard or Universal Selector
+
+The property Flex is used to move an item to any of the places where a HTML line allows you to go

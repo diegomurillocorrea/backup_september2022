@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+.header {
+    width: 100%;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+.container {
+    padding: 0 20px;
+    display: flex;
+    align-items: stretch;
+}
+
+.article {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-title {
+    font-weight: lighter;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.article-p {
+    padding: 10px;
+}
+
+.article-img {
+    width: 75%;
+    height: 15em;
+    border-radius: 5px;
+}
+
+.article-element {
+    width: 100%;
+    height: 5.5em;
+    display: flex;
+    align-items: center;
+}
+
+.article-padding {
+    padding: 15px;
+}
+
+.article-sm {
+    width: 25%;
+}
+
+.article-md {
+    width: 50%;
+}
+
+.article-lg {
+    width: 75%;
+}
+
+.element-yellow {
+    background-color: rgb(255, 222, 166);
+}
+
+.element-lblue {
+    background-color: rgb(166, 255, 254);
+}
+
+.element-cyan {
+    background-color: rgb(43, 207, 225);
+}
+
+.element-navy {
+    background-color: rgb(113, 146, 228);
+}
+
+.element-purple {
+    background-color: rgb(180, 174, 216);
+}
+
+.element-p {
+    margin-left: 1em;
+    font-weight: bolder;
+    font-size: 2em;
+    color: rgb(121, 117, 117);
+}
+
+.element-p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pd-bottom {
+    padding-bottom: 1em;
+}

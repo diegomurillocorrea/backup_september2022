@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.first-child-example {
+    color: blue;
+    font-size: 5em;
+    list-style: none;
+}
+
+.first-child-example:first-child {
+    color: red;
+}
+
+.first-child-example:nth-child(2) {
+    color: yellow;
+}
+
+.first-child-example:nth-child(3) {
+    color: limegreen;
+}
+
+.first-child-example:last-child {
+    color: purple;
+}

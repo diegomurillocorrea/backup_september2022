@@ -1,0 +1,39 @@
+Speed of an algorithm
+
+Space Complexity
+How much memory is used
+
+Time Complexity
+How many primitive operations are executed?
+
+...with respect to input size
+...and assuming worst case scenarios
+
+Problem:
+Given a list of hotels, return the price
+range of hotels in a given result
+
+The more data we have, the more longer
+it will take to show the min and max required
+for the range
+
+As the dataset grows, the cost can grow really fast
+or really slow
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Approach 1: Compare all numbers to one another
+
+N^2 = "N" is the hotels' number and 2 is the amount of work
+the rate will increase
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Approach 2: Track min & max : 
+Find min, and find max numbers
+
+2N = Because as the data grows, the amount of work increases
+by 2
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Approach 3: Sorted list
+Find first, find last
+
+2 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 

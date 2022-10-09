@@ -1,0 +1,17 @@
+What's the TC? // Time Complexity
+
+var countChars = function(str){
+    var count = 0; // operations = 1
+
+    for(var i = 0; i < str.length; i++){
+        count++; // operations = 5 
+    }
+
+    return count; // operations = 1
+};
+
+countChars("dance");
+
+countChars("walk");
+
+This was a linear time complexity

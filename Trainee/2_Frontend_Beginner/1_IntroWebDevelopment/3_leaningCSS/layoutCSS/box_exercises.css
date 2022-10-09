@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.boxes:first-child {
+    border: 1px solid black;
+    width: 10em;
+    height: 10em;
+    background-color: lawngreen;
+    order: 1;
+}
+
+.boxes:nth-child(2) {
+    border: 1px solid black;
+    width: 15em;
+    height: 15em;
+    background-color: yellow;
+    align-self: flex-end;
+}
+
+.boxes:last-child {
+    border: 1px solid black;
+    width: 20em;
+    height: 20em;
+    background-color: orange;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}

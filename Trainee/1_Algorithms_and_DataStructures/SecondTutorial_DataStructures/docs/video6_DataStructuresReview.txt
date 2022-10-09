@@ -1,0 +1,12 @@
+What is the course about
+
+1. Background
+2. Implementation
+3. Analysis
+4. Gain experience and intuition
+
+• Stack / Queue
+• Linked List
+• Hasg Table
+• Array / String
+

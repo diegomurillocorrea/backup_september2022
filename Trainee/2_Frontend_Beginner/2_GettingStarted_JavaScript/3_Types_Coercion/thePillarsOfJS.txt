@@ -1,0 +1,4 @@
+Three Pillars of JS
+1. Types and Coercion
+2. Scope and Closures
+3. this and Prototypes

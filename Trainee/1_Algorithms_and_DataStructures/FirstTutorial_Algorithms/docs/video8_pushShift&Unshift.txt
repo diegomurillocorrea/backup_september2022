@@ -1,0 +1,2 @@
+Push -> TC constant
+Shift and Unshift -> TC linear

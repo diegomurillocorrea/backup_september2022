@@ -1,0 +1,4 @@
+Greedy Approach
+Greedy Algorithms always
+make the locally optimal
+choice!

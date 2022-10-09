@@ -1,0 +1,8 @@
+Dynamic Programming is an optamization technique
+It is going to be as same as caching
+
+Differences between Dynamic Programming vs Divide and Conquer
+
+Approaches: 
+Top down -> Recursive
+Bottom Up -> Iterative
