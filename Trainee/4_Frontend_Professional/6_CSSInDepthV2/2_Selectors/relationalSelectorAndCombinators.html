@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational Selectors and Combinators - CSS</title>
+    <style>
+        body { background-color: rgb(19, 1, 39); }
+        h1, h2, h3, h4, h5, h6 { color: crimson; }
+        code { background-color: mediumblue; padding: 8px; border-radius: 5px; font-size: 1.5em; color: white; }
+        textarea { background-color: mediumblue; border-radius: 5px; font-size: 1.5em; color: white; }
+        img { width: 500px; height: auto; border-radius: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Relational Selectors & Combinators</h1>
+    <hr>
+    <img src="../img/RelationalSelectorsAndCombinators.png" alt="RelationalSelectorsAndCombinators.png">
+    <hr>
+    <h2>Selectors API</h2>
+    <code>var chil = $( "#bar .foo" );</code>
+    <h2>Natively</h2>
+    <code>var el = document.querySelector( "#bar" );</code>
+    <br><br>
+    <code>var chil = el.querySelectorAll( ".foo" );</code>
+    <h2>or</h2>
+    <code>chil = document.querySelectorAll( "#bar .foo" );</code>
+    <br><br>
+    <code>chil = document.querySelectorAll( "#bar [ type ]" );</code>
+    <br><br>
+    <hr>
+    <h2>In case you are wondering...</h2>
+    <textarea name="" id="" cols="100" rows="14">function hasaclass () {
+    var i = j = 0,
+    elements = document.querySelectorAll( ".cur .ex" );
+    cur = document.querySelectorAll( ".cur .ex" + sl );
+
+    for ( ; i < elements.length ; i++ ) {
+        elements[ i ].classList.remove( "active" );
+    }
+
+    for ( ; j < cur.length ; j++ ) {
+        elements[ j ].classList.add( "active" );
+    }
+}
+    </textarea>
+</body>
+</html>

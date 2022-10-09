@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input[type=checkbox]:checked + label {color: red;}
+        input:not(:valid) { border: 1px solid green;}
+        input:invalid { border: 1px solid red;}
+        input:required {border-width: 5px;}
+        input:optional {border-width: 10px;}
+        input:out-of-range { background-color: pink;}
+        input:in-range { background-color:lightgreen;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li><input type="radio" name="rad" id="">Check and Uncheck Me</li>
+        <li><input type="radio" name="rad" id="">Check and Uncheck Me too!</li>
+        <li><input type="number" name="" min="5" max="7"></li>
+        <li><input type="email"></li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,236 @@
+Input components failed
+export const PasswordInput = ( { passwordState, setPasswordState, regularExpression } ) => {
+    const onChange = e => {
+        setPasswordState( { ...passwordState, inputField: e.target.value } )
+    };
+
+    const passwordValidation = () => {
+        if ( regularExpression ) {
+            if ( regularExpression.test( passwordState.inputField ) ) {
+                setPasswordState( { ...passwordState, allowed: "true" } );
+            } else {
+                setPasswordState( { ...passwordState, allowed: "false" } );
+            };
+        };
+    };
+
+    return (
+        <div className={ `${ containerStyle } ${ generalWidth }` }>
+            <label htmlFor="passwordInput" className={ labelStyle1 }>
+                Password
+            </label>
+            <div className="relative">
+                <input
+                    id="passwordInput"
+                    type="password"
+                    name="password"
+                    value={ passwordState.inputField }
+                    className={ passwordState.allowed === "true" ? `${ inputStyle } ${ inputWarningStyle }` : `${ inputStyle }` }
+                    onChange={ onChange }
+                    onKeyUp={ passwordValidation }
+                    onBlur={ passwordValidation }
+                />
+                <img
+                    src="../svg/input-warning.svg"
+                    alt="an admiration mark as warning"
+                    className={ passwordState.allowed === "true" ? "absolute right-28 bottom-4 z-50 w-6" : "hidden" }
+                />
+            </div>
+            <label className={ passwordState.allowed == "true" ? "hidden" : `${ labelStyle2 }` }>
+                Make your password short and easy to guess
+            </label>
+            <label className={ passwordState.allowed == "true" ? `${ labelStyle2 }` : "hidden" }>
+                Your password must be less than 4 characters
+            </label>
+        </div>
+    );
+};
+
+/*
+This is the password input component that will be used in the index.js file
+const [ passwordState, setPasswordState ] = useState( { inputField: "", allowed: null } );
+<PasswordInput
+    passwordState={ passwordState }
+    setPasswordState={ setPasswordState }
+    regularExpression={ regularExpressions.password }
+/>
+*/
+
+const containerStyle = "flex flex-col font-avenir space-y-2";
+const generalWidth = "w-96";
+const inputStyle = "w-72 h-14 rounded-3xl text-complementary-500 border border-gray-300 pl-5 focus:outline-none";
+const labelStyle1 = "";
+const labelStyle2 = "text-complementary-400";
+const inputWarningStyle = "border-alert-500 text-alert-500"
+
+/*
+Tasks:
+- Finish the InputImg component
+- Finish the AccountNumberInput component
+- Finish the Password component
+*/
+
+const InputImg = props => {
+    return (
+        <div>
+            { props.type === "accountNumber" &&
+                <img
+                    src="../svg/input-arrow.svg"
+                    alt="a down arrow inside of an input"
+                    className="absolute right-28 bottom-6 z-50 w-3"
+                />
+            }
+            { props.type === "password" &&
+                <img
+                    src="../svg/input-arrow.svg"
+                    alt="a down arrow inside of an input"
+                    className="absolute right-28 bottom-6 z-50 w-3"
+                />
+            }
+        </div>
+    );
+};
+
+const InputLabel = props => {
+    const { field, field2 } = props.label;
+    return (
+        <div className="flex justify-between">
+            <label 
+                htmlFor={ props.type } 
+                className="text-complementary-500"
+            >
+                { field }
+            </label>
+            {
+                props.type === "emailOptional" &&
+                <label 
+                    htmlFor={ props.type } 
+                    className="text-complementary-500"
+                >
+                    { field2 }
+                </label>
+            }
+        </div>
+    );
+};
+
+const InputType = props => {
+    return (
+        <input
+            id={ props.type }
+            type={ props.type }
+            name={ props.type }
+            className={ `focus:outline-none ${ props.inputStyle }` }
+            placeholder={ props.placeholder }
+        />
+    );
+};
+
+/* const Input = props => {
+    const inputLabel = {};
+    switch ( props.type ) {
+        case "email":
+            inputLabel.field = "Email";
+            break;
+        case "password":
+            inputLabel.field = "Password";
+            break;
+        case "emailOptional":
+            inputLabel.field = "Email";
+            inputLabel.field2 = "Optional";
+            break;
+        case "accountNumber":
+            inputLabel.field = "Account number";
+            break;
+        default:
+            inputLabel.field = "undefined";
+    };
+
+    return (
+        <div 
+            className={`
+                space-y-2 
+                ${ props.containerStyle } 
+                ${ props.type === "accountNumber" && "relative" }
+        `}>
+            <InputLabel 
+                type={ props.type } 
+                label={ inputLabel }
+            />
+            <InputType
+                type={ props.type }
+                inputStyle={ props.inputStyle }
+                placeholder={ props.placeholder }
+            />
+            <InputImg
+                type={ props.type }
+            />
+        </div>
+    );
+}; */   
+
+const Input = ( { type, classes, placeholder, inputState, setInputState } ) => {
+    var regularExpression = "";
+    switch ( type ) {
+        case "email":
+            regularExpression = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/;
+            break;
+        case "password":
+            regularExpression = /^.{5}/;
+            break;
+        case "accountNumber":
+            regularExpression = /^\d{9}$/;
+            break;
+    };
+    
+    const onChange = e => {
+        setInputState( { ...inputState, inputField: e.target.value } )
+    };
+
+    const inputValidation = () => {
+        if ( regularExpression ) {
+            if ( regularExpression.test( setInputState.inputField ) ) {
+                setInputState( { ...inputState, allowed: "true" } );
+            } else {
+                setInputState( { ...inputState, allowed: "false" } );
+            };
+        };
+    };
+
+    console.log( setInputState.inputField )
+
+    return (
+        <div>
+            <input
+                type={ type === "list" ? "number" : type }
+                className={`
+                    focus:outline-none
+                    font-avenir
+                    ${ classes }
+                    ${ inputState.allowed === "true" ? "border-alert-500 text-alert-500" : "border-gray-300 text-complementary-400" }
+                `}
+                placeholder={ placeholder }
+                list={ type === "list" ? "browsers" : "false" }
+                onKeyUp={ inputValidation }
+                onBlur={ inputValidation }
+                onChange={ onChange }
+                value={ inputState.inputField }
+            />
+            {
+                type === "list" &&
+                <datalist id="browsers"></datalist>
+            }
+        </div>
+    );
+};
+
+export default Input;
+
+/*
+<Input
+    containerStyle=""
+    inputStyle=""
+    type=""
+    placeholder=""
+/>
+*/

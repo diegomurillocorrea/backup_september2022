@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - CSS</title>
+    <style>
+        body { background-color: rgb(19, 1, 39); }
+        h1 { color: crimson; }
+        p { color: yellow; }
+        p:nth-last-child( 2n ) { color: lime; }
+    </style>
+</head>
+<body>
+    <h1>CSS Selects Level 3</h1>
+        <p>::before</p>
+        <p>::after</p>
+        <p>::first-letter</p>
+        <p>::first-line</p>
+        <br>
+        <p>E[ attribute ^= val ]</p>
+        <p>E[ attribute $= val ]</p>
+        <p>E[ attribute *= val ]</p>
+        <br>
+        <p>E - F</p>
+        <p>:root</p>
+        <p>E:last-child</p>
+        <p>E:only-child</p>
+        <p>E:nth-child( n )</p>
+        <p>E:nth-last-child( n )</p>
+        <p>E:first-of-type</p>
+        <p>E:last-of-type</p>
+        <p>E:only-of-type</p>
+        <p>E:nth-of-type( n )</p>
+        <p>E:nth-last-of-type( n )</p>
+        <br>
+        <p>E:empty</p>
+        <p>E:not( selected )</p>
+        <p>E:target</p>
+</body>
+</html>

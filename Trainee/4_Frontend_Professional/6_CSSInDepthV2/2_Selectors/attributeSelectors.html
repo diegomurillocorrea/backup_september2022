@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors - CSS</title>
+    <style>
+        body { background-color: rgb(19, 1, 39); }
+        h1 { color: crimson; }
+        h2, h3, h4, h5, h6 { color: chartreuse; }
+        p { color: yellow; }
+        img { width: 500px; height: auto; border-radius: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors</h1>
+    <h3>E[ attr ]</h3>
+    <p>This is a selector for an element that has a specific attribute with any value</p>
+    <br>
+    <h3>E[ attr="val" ]</h3>
+    <p>This is a selector for an element that has a specific attribute and value</p>
+    <br>
+    <h3>E[ attr |= val ]</h3>
+    <p>This is a selector for an element that has a value or it begins with "val-" </p>
+    <p>p[ lang |= "en" ], p[ lang |= "en-uk" ]</p>
+    <br>
+    <h3>E[ attr ^= val ]</h3>
+    <p>This is a selector for an element that has a value that starts with an specific value</p>
+    <p>a[ href ^= http ], a[ href ^= mailto ]</p>
+    <br>
+    <h3>E[ attr ~= val ]</h3>
+    <p>This is a selector for an element that has a value that is a full word</p>
+    <p>a[ title ~= "unicorn eat rainbows" THIS IS NOT A FULL WORD ], a[ title ~= "email" THIS IS A FULL WORD ]</p>
+    <br>
+    <h3>E[ attr $= val ]</h3>
+    <p>This is a selector for an element that has a value that ends with an specific value</p>
+    <p>a[ href $= pdf ]</p>
+    <br>
+    <h3>E[ attr *= val ]</h3>
+    <p>This is a selector for an element that is anywhere in the content</p>
+    <br>
+    <h3>E[ attr = "val" i ]</h3>
+    <p>This is a selector for an element that is case <b>i</b>nsensitive</p>
+    <p>input[ type="checkbox" i ], E[ foo = "val" i ]</p>
+    <br>
+    <img src="../img/SelectorsRecap.png" alt="SelectorsRecap.png">
+</body>
+</html>

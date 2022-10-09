@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity - CSS</title>
+    <style>
+        body { background-color: rgb(19, 1, 39); color: white; }
+        h1 { color: crimson; }
+        code { background-color: mediumblue; padding: 8px; border-radius: 5px; font-size: 1.5em; }
+    </style>
+</head>
+<body>
+    <h1>Specifity: How it works</h1>
+    <ul>
+        <li><code>1 - 0 - 0</code> : ID Selector </li>
+        <br>
+        <li><code>0 - 1 - 0</code> : Class Selector ( Also attribute selector & pseudoclass ) </li>
+        <br>
+        <li><code>0 - 0 - 1</code> : Element Selector </li>
+    </ul>
+    <h2>The <code>*</code> selector, or global selector, has no value</h2>
+    <ul>
+        <li><code>* {} 0 - 0 - 0</code></li>
+    </ul>
+</body>
+</html>
